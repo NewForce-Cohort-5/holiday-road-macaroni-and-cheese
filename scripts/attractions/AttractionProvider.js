@@ -5,5 +5,10 @@ export const useAttractions = () => {
 }
 export const getAttractions = () => { 
     return fetch("http://holidayroad.nss.team/bizarreries")
-    .then
+    .then(attractionResponse => attractionResponse.json())
+    .then(attractionReceipt => {
+        
+        attractions = attractionReceipt
+    } )
 }
+
