@@ -8,11 +8,11 @@ export const ParksList = () => {
         let parksHTML = "";
 
         parksArray.forEach(singleParkObj => {
-            parksHTML += (singleParkObj);
+            parksHTML = (singleParkObj);
         })
-    document.querySelector(".parks-container").innerHTML = `
-    <div class="parks-styled-container">${parksHTML}</div>
-    `
+    // document.querySelector(".parks-container").innerHTML = `
+    // <div class="parks-styled-container">${parksHTML}</div>
+    // `
 })
 }
 

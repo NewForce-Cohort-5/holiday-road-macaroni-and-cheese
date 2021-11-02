@@ -29,4 +29,11 @@ const render = parksCollection => {
 
 
 document.querySelector("#parks-dropdown").addEventListener("change", (eventObject) => {
+document.querySelector("body").addEventListener("change", (eventObject) => {
+    if(eventObject.target.id === "natparks-dropdown"){
+      
+        document.querySelector(".parks-container").innerHTML = `
+        <div class="parks-styled-container">${eventObject.target.value}</div>
+     `
+    }git 
 })
