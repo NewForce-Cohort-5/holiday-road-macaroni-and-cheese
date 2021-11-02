@@ -4,15 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Holiday Road</title>
 </head>
 <body>
     <div id="logo"></div>
-    <div id="top-bar"></div>
-    <section id="overview">
 
+    <div id="top-bar">
+        <!-- Drowdowns -->
+        <div id="parks-dropwdown"></div>
+        <div id="eateries-dropwdown"></div>
+        <div id="attractions-dropwdown"></div>
+    </div>
 
-        
+    <section class="overview">
+
+        <h2>National Parks</h2>
+        <div class="parks-container">
+            <p>Explore National Parks near you</p>
+            <!-- National Park detail button -->
+            <button id="parks-details">Details</button>
+        </div>
+
+        <h2>5-Day Weather Forecast</h2>
+        <div class="weather-container">  </div>
+
+        <h2>Oddities and Attractions</h2>
+        <div class="attractions-container">
+            <p>Come see our weird stuff</p>
+            <!-- Attractions detail button -->
+            <button id="attractions-details">Details</button>
+        </div>
+
+        <h2>Eateries</h2>
+        <div class="eateries-container">
+            <p>Come eat our stuff</p>
+             <!-- Eateries detail button -->
+             <button id="eateries-details">Details</button>
+        </div>
+
     </section>
+
+    <script type="module" src="./scripts/main.js"></script>
+
+    <footer>Mac N' Cheese, TM</footer>
+
 </body>
-</html>
+</html
