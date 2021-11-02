@@ -28,6 +28,5 @@ const render = parksCollection => {
 
 
 
-// document.querySelector("#parks-dropdown").addEventListener("change", (eventObject) => {
-//     ParksList()
-// })
+document.querySelector("#parks-dropdown").addEventListener("change", (eventObject) => {
+})
