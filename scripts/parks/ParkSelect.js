@@ -9,8 +9,7 @@ export const ParkSelect = () => {
 }
 
 const render = parksCollection => {
-
-    document.querySelector("#parks-dropdown").innerHTML = `
+    document.querySelector("#parks-dropdown").innerHTML =`
         <select class="dropdown" id="natparks-dropdown">
         <option value="0">Please select a park...</option>
             ${
