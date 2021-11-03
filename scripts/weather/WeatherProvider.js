@@ -1,7 +1,8 @@
 let weather = []
 
-export const getWeather = (lat, long, apikey) =>{
-    return fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${apikey}`)
+export const getWeather = (zipCode) =>{
+    return fetch(`https://api.openweathermap.org/data/2.5/forecast?&units=imperial&zip=${zipCode}&appid=${weatherKey
+    `)
     .then(res => res.json())
     .then(parsedWeather => {weather = parsedWeather.list.slice()
   })
