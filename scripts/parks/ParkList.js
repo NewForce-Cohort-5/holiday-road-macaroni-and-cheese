@@ -1,5 +1,6 @@
 import { Parks } from "./ParkCard.js";
 import { getParks, useParks } from "./ParkDataProvider.js";
+import { ParkSelect } from "./ParkSelect.js";
 
 export const ParksList = () => {
     getParks()
@@ -15,4 +16,37 @@ export const ParksList = () => {
     // `
 })
 }
+
+
+// const contentTarget = document.querySelector(".parks-details")
+
+// export const parkList = (parkSelect, selectedChoice) => {
+//     let parkListContainer = document.querySelector(".parks-details");
+//     parkListContainer.innerHTML = ""
+
+//     getParks()
+//     .then(() => {
+//         let parks = useParks();
+
+//         if(parkSelect === ""){
+
+//             parks = parks.filter(singleParkInLoop = {
+//                 return parkSelect === selectedChoice           
+//           })
+//         }
+//         else if(parkSelect === ""){
+//             parks = parks.filter(singleParkObjInLoop => {
+//                 return singleParkObjInLoop.pa
+            
+                
+//            })    
+//         }
+//     });
+
+    
+// }
+
+document.querySelector(".parks-details").addEventListener("click", () => {
+    CriminalList()
+})
 
