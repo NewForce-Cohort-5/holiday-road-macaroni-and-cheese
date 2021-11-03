@@ -1,3 +1,10 @@
 {
-	"itineraries": []
+	"itineraries": [
+		{"id": ,
+		 "park": ,
+		 "eatery": ,
+		 //weather related geographical inforamtion key paire
+		}
+		
+	]
 }
