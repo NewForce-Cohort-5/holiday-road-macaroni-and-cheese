@@ -46,7 +46,7 @@ export const ParksList = () => {
     
 // }
 
-document.querySelector(".parks-details").addEventListener("click", () => {
-    CriminalList()
-})
+// document.querySelector(".parks-details").addEventListener("click", () => {
+//     CriminalList()
+// })
 
