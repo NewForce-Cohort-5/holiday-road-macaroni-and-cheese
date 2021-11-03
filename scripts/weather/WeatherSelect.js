@@ -1,8 +1,10 @@
 import { WeatherList } from "./WeatherList";
 import { getWeather, useWeather} from "./WeatherProvider.js"
+import { useParks } from "./parks/ParkDataProvider.js";
+
 
 export const WeatherSelect = () => {
-    getWeather ()
+    getWeather (lat, long,)
     .then(() => {
         let weatherWeather = useWeather()
         render(weatherWeather)
@@ -10,5 +12,5 @@ export const WeatherSelect = () => {
 }
 
 const render = weatherCollection => {
-    
+
 }

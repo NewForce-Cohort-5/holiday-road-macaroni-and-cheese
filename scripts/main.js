@@ -6,7 +6,7 @@ ParkSelect()
 EaterySelect()
 AttractionSelect()
 
-
+// Hides and shows info when "details" button is clicked
 document.querySelector("#parks-details").addEventListener("click", ()=> {
     var x = document.getElementById("parkinfo");
     if (x.style.display === "none") {
