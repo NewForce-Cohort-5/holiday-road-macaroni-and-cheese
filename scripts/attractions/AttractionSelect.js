@@ -28,6 +28,8 @@ document.querySelector("body").addEventListener("change", (eventObject) => {
     {
         document.querySelector(".attractions-container").innerHTML =   `
         <div class="attractions-styled-container">${eventObject.target.value}</div>
+
+        <button id="attractions-details">Details</button>
         `
     }
     }
