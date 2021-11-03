@@ -27,6 +27,7 @@ document.querySelector("body").addEventListener("change", (eventObject) => {
       
         document.querySelector(".parks-container").innerHTML = `
         <div class="parks-styled-container">${eventObject.target.value}</div>
+        
      `
     }
 })
