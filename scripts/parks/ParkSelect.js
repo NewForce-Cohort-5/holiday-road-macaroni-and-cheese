@@ -22,19 +22,8 @@ const render = parksCollection => {
     `
 }
 
-
-
-
-
-
 document.querySelector("body").addEventListener("change", (eventObject) => {
     if(eventObject.target.id === "natparks-dropdown"){
-        ParksList (eventObject.target.value)
-      
-        // document.querySelector(".parks-container").innerHTML = `
-        // <div class="parks-styled-container">${eventObject.target.value}</div>
-        
-     
+        ParksList(eventObject.target.value)
     }
 })
-
