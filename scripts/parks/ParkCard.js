@@ -1,15 +1,29 @@
 export const Parks = (park) => {
     return `
-    <section id="parks_card">
-        <div class="park_name">${park.data.fullName}</div>
-        <p class="park_url"><a href=${park.data.url}> Visit the website</a></p> 
-        <div class="park_latitude">${park.data.latitude}</div>
+    <section id="parkinfo">
+        <div class="park_name">${park.fullName}</div>
+        <button id="parks-details" type="button">Details</button>
+        <p class="park_url"><a href=${park.url} target="_blank" rel="noopener noreferrer"> Visit the website</a></p> 
+        <div class="park_latitude">${park.latitude}</div>
         </section>
-        <div class="park_longitude">${park.data.longitude}</div>
-        <div class="park_state">${park.data.state}</div>
-        <div class="park_contact_phone">${park.data.contacts.phoneNumners[0].phoneNumber}</div>
-        <div class="park_contact_eMail">${park.data.contacts.phoneNumners.emailAddresses}</div>
-        </section>
+        <div class="park_longitude">${park.longitude}</div>
+        <div class="park_state">${park.states}</div>
+         </section>
+         <div class="park_state">${park.description}</div>
+         </section>
+
     `
 }
-//   add here 
+//  <div class="park_contact_eMail">${park.data.contacts.phoneNumners.emailAddresses}</div>
+//<div class="park_contact_phone">${park.data.contacts.phoneNumners[0].phoneNumber}</div> II need a help with how to reach the info
+ 
+document.querySelector(".parks-container").addEventListener("click", ()=> {
+    var x = document.getElementById("parkinfo");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+    
+)
