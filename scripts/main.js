@@ -15,7 +15,7 @@ ParkSelect()
 EaterySelect()
 AttractionSelect()
 
-// <<<<<<< HEAD
+<<<<<<< HEAD
 
 // document.querySelector("#parks-details").addEventListener("click", ()=> {
 //     var x = document.getElementById("parkinfo");
@@ -25,8 +25,9 @@ AttractionSelect()
 //       x.style.display = "none";
 //     }
 //   }
-// 
+=======
 // Hides and shows info when "details" button is clicked
+<<<<<<< HEAD
 // document.querySelector("#parks-details").addEventListener("click", ()=> {
 //     var x = document.getElementById("parkinfo");
 //     if (x.style.display === "none") {
@@ -36,6 +37,19 @@ AttractionSelect()
 //     }
 //   })
 
+=======
+document.querySelector("#parks-details").addEventListener("click", ()=> {
+    var x = document.getElementById("parkinfo");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+>>>>>>> main
+    
+// )
+>>>>>>> parent of 39f2213 (Merge pull request #13 from NewForce-Cohort-5/bdHolidayRoad)
 
 document.querySelector("#parks-details").addEventListener("click", ()=> {
     var x = document.getElementById("parkinfo");
