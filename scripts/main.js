@@ -5,15 +5,13 @@ import { settings } from "./Settings.js"
 
 //console.log (settings.npsKey)
 
-let object = settings 
- console.log(object.npsKey)
 
 
 
 
 
-ParkSelect(object.npsKey)
-console.log(ParkSelect)
+
+ParkSelect()
 EaterySelect()
 AttractionSelect()
 

@@ -1,19 +1,12 @@
 import { ParksList } from "./ParkList.js"
 import {getParks, useParks} from "./ParkDataProvider.js"
-// import { settings } from "../Settings.js"
+import { settings } from "../Settings.js"
 
-// console.log (settings.npsKey)
+let key = settings.npsKey 
+ console.log(key)
 
-// let object = settings 
-//  console.log(object)
-
-// const  settingsID = (ob) => {
-//     return NParkID = ob.npskey}
-
-//     settingsID(settings)
-
-export const ParkSelect = (parkAipKey) => {
-    getParks(parkAipKey).then(() => {
+export const ParkSelect = () => {
+    getParks(key).then(() => {
         let parkPark = useParks()
         render(parkPark)
     })
