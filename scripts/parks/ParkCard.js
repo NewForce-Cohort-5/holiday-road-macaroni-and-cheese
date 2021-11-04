@@ -10,12 +10,15 @@ export const Parks = (park) => {
         <div class="park_state">${park.states}</div>
          </section>
          <div class="park_state">${park.description}</div>
+         <div class="park_zip">${park.addresses[0].postalCode}</div>
+         <div class="park_phone">${park.contacts.phoneNumbers[0].phoneNumber}</div>
+         <div class="park_email">${park.contacts.emailAddresses[0].emailAddress}</div>
          </section>
 
     `
 }
-//  <div class="park_contact_eMail">${park.data.contacts.phoneNumners.emailAddresses}</div>
-//<div class="park_contact_phone">${park.data.contacts.phoneNumners[0].phoneNumber}</div> II need a help with how to reach the info
+//  phoen number diplay format= the dispyed right
+
  
 document.querySelector(".parks-container").addEventListener("click", ()=> {
     var x = document.getElementById("parkinfo");
