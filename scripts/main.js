@@ -1,10 +1,22 @@
 import { ParkSelect } from "./parks/ParkSelect.js";
 import { AttractionSelect } from "./attractions/AttractionSelect.js"
 import {EaterySelect} from "./eateries/EaterySelect.js"
+import { settings } from "./Settings.js"
 
-ParkSelect()
+//console.log (settings.npsKey)
+
+let object = settings 
+ console.log(object.npsKey)
+
+
+
+
+
+ParkSelect(object.npsKey)
+console.log(ParkSelect)
 EaterySelect()
 AttractionSelect()
+
 
 
 document.querySelector("#parks-details").addEventListener("click", ()=> {
