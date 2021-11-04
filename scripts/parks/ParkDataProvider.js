@@ -1,11 +1,15 @@
+import {settings} from "../Settings.js"
+
+const parkKey=settings.npsKey
+
 let parks = []
 
 export const useParks = () => {
     return parks.slice()
 }
 
-export const getParks = () => {
-    return fetch("https://developer.nps.gov/api/v1/parks?api_key=IDFYIA8FpIW8iKzxdTjnknA2yIoxxYeJUQTrt8dG")
+export const getParks = ( ) => {
+    return fetch(`https://developer.nps.gov/api/v1/parks?api_key=${parkKey}`)
     .then(response => response.json())
     .then(Jresponse => {
         //check to see if Jresponse is working
