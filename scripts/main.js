@@ -6,6 +6,7 @@ ParkSelect()
 EaterySelect()
 AttractionSelect()
 
+<<<<<<< HEAD
 
 // document.querySelector("#parks-details").addEventListener("click", ()=> {
 //     var x = document.getElementById("parkinfo");
@@ -15,6 +16,17 @@ AttractionSelect()
 //       x.style.display = "none";
 //     }
 //   }
+=======
+// Hides and shows info when "details" button is clicked
+document.querySelector("#parks-details").addEventListener("click", ()=> {
+    var x = document.getElementById("parkinfo");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+>>>>>>> main
     
 // )
 
