@@ -13,6 +13,10 @@ const parkObject= parksArray.find(singleObject => {
 }) 
 console.log(parkObject)
 
+parksHTML = Parks(parkObject)
+
+document.querySelector(".parks-container").innerHTML = parksHTML
+
         // parksArray.forEach(singleParkObj => {
         //     parksHTML = (singleParkObj);
         // })
