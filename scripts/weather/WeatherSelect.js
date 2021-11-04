@@ -12,5 +12,5 @@ export const WeatherSelect = () => {
 }
 
 const render = weatherCollection => {
-    
+
 }
