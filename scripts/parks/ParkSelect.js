@@ -1,4 +1,4 @@
-import { ParksList } from "./ParkList.js"
+import { ParksList, WeatherList } from "./ParkList.js"
 import {getParks, useParks} from "./ParkDataProvider.js"
 import { settings } from "../Settings.js"
 
@@ -6,7 +6,7 @@ let key = settings.npsKey
  console.log(key)
 
 export const ParkSelect = () => {
-    getParks(key).then(() => {
+    getParks().then(() => {
         let parkPark = useParks()
         render(parkPark)
     })
@@ -29,5 +29,6 @@ const render = parksCollection => {
 document.querySelector("body").addEventListener("change", (eventObject) => {
     if(eventObject.target.id === "natparks-dropdown"){
         ParksList(eventObject.target.value)
+        WeatherList(eventObject.target.value)
     }
 })

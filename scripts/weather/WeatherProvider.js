@@ -1,15 +1,18 @@
 let weather = []
 
+export const useWeather = () =>{
+  return weather.slice()
+}
+
 export const getWeather = (zipCode, weatherKey) =>{
-    return fetch(`https://api.openweathermap.org/data/2.5/forecast?&units=imperial&zip=${zipCode}&appid=${weatherKey}
+    return fetch(`https://api.openweathermap.org/data/2.5/forecast?zip=${zipCode},us&appid=${weatherKey}
     `)
     .then(res => res.json())
-    .then(parsedWeather => {weather = parsedWeather.list.slice()
+    .then(parsedWeather => {
+      //console.log(parsedWeather.list)
+      weather = parsedWeather.list
   })
   
   
   }
-  export const useWeather = () =>{
-    return weather
-  }
-
+ 

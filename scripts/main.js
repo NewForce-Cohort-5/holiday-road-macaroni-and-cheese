@@ -46,7 +46,7 @@ document.querySelector("#parks-details").addEventListener("click", ()=> {
     }
   }
     
-// )
+)
 
 document.querySelector("#attractions-details").addEventListener("click", ()=> {
     var x = document.getElementById("attractioninfo");
