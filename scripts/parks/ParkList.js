@@ -13,6 +13,7 @@ const parkObject= parksArray.find(singleObject => {
 }) 
 console.log(parkObject)
 
+//new part
 parksHTML = Parks(parkObject)
 
 document.querySelector(".parks-container").innerHTML = parksHTML
