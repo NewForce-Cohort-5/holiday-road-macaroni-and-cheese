@@ -1,8 +1,36 @@
-export const Parks = (parks) => {
+export const Parks = (park) => {
     return `
-    <section id="parks_card">
-        <div class="parks_name">${parks.data.fullName}</div>
-        </section>
+    <section >
+        <div class="park_name">${park.fullName}</div>
+        <button id="parks-details" type="button">Details</button>
+        <article id="parkinfo" style="display: none;">
+        <p class="park_url"><a href=${park.url} target="_blank" rel="noopener noreferrer"> Visit the website</a></p> 
+        <div class="park_latitude">${park.latitude}</div>
+       
+        <div class="park_longitude">${park.longitude}</div>
+        <div class="park_state">${park.states}</div>
+        
+         <div class="park_state">${park.description}</div>
+         <div class="park_zip">${park.addresses[0].postalCode}</div>
+         <div class="park_phone">${park.contacts.phoneNumbers[0].phoneNumber}</div>
+         <div class="park_email">${park.contacts.emailAddresses[0].emailAddress}</div>
+         </article>
+         </section>
+
     `
 }
-//   add here 
+//  phoen number diplay format= the dispyed right
+
+ 
+document.querySelector(".parks-container").addEventListener("click", (event)=> {
+
+  if(event.target.id === "parks-details")
+    var x = document.getElementById("parkinfo");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+    
+)

@@ -1,6 +1,6 @@
 import { Parks } from "./ParkCard.js";
 import { getParks, useParks } from "./ParkDataProvider.js";
-import { ParkSelect } from "./ParkSelect.js";
+
 
 export const ParksList = (stringFromDropdown) => {
     getParks()
@@ -12,6 +12,11 @@ const parkObject= parksArray.find(singleObject => {
     return stringFromDropdown === singleObject.fullName
 }) 
 console.log(parkObject)
+
+//new part
+parksHTML = Parks(parkObject)
+
+document.querySelector(".parks-container").innerHTML = parksHTML
 
         // parksArray.forEach(singleParkObj => {
         //     parksHTML = (singleParkObj);
