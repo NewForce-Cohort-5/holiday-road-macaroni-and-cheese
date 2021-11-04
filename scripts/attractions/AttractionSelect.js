@@ -26,11 +26,7 @@ const render = attractionsCollection => {
 document.querySelector("body").addEventListener("change", (eventObject) => {
     if(eventObject.target.id === "att_dropdown") 
     {
-        document.querySelector(".attractions-container").innerHTML =   `
-        <div class="attractions-styled-container">${eventObject.target.value}</div>
-
-        <button id="attractions-details">Details</button>
-        `
+       AttractionsList(eventObject.target.value)
     }
     }
 )
