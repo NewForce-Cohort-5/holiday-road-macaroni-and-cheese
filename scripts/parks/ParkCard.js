@@ -2,6 +2,7 @@ export const Parks = (park) => {
     return `
     <section class="parkcard">
         <div class="park_name">${park.fullName}
+       
         <button id="parks-details" type="button">Details</button></div>
         <article id="parkinfo" style="display: none;">
         <p class="park_url"><a href=${park.url} target="_blank" rel="noopener noreferrer"> Visit the website</a></p> 
