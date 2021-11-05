@@ -16,6 +16,6 @@ export const Weather = (weather) => {
     `
 
 }
-console.log(eachWeatherHTML)
+//console.log(eachWeatherHTML)
 return eachWeatherHTML
 }
