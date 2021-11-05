@@ -1,8 +1,8 @@
 export const Parks = (park) => {
     return `
-    <section >
-        <div class="park_name">${park.fullName}</div>
-        <button id="parks-details" type="button">Details</button>
+    <section class="parkcard">
+        <div class="park_name">${park.fullName}
+        <button id="parks-details" type="button">Details</button></div>
         <article id="parkinfo" style="display: none;">
         <p class="park_url"><a href=${park.url} target="_blank" rel="noopener noreferrer"> Visit the website</a></p> 
         <div class="park_latitude">${park.latitude}</div>

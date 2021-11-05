@@ -32,3 +32,4 @@ document.querySelector("body").addEventListener("change", (eventObject) => {
         WeatherList(eventObject.target.value)
     }
 })
+
