@@ -1,13 +1,14 @@
 body {
     font-family: OCR A Std, monospace;
     background-color: rgb(206, 206, 11);
+    color: rgba(121, 121, 121, 0.685);
 }
 
 
 #top-bar {
     display: flex;
     justify-content: space-around;
-    border: black solid 2px;
+    border: rgba(121, 121, 121, 0.685) solid 2px;
     padding: 5px;
     margin: 2em;
 }
@@ -53,11 +54,11 @@ body {
     justify-content: flex-end;
 }
 .weather-container{
-border: solid black 2px;
+border: solid rgba(121, 121, 121, 0.685) 2px;
 }
 .parkcard{
     
-   border: black solid 2px;
+   border: rgba(121, 121, 121, 0.685)solid 2px;
     
 }
 
@@ -97,11 +98,11 @@ img {
   }
  
   .attractions-container {
-    border: black solid 2px;
+    border:rgba(121, 121, 121, 0.685) solid 2px;
 
   }
 .eateries-container{
-    border: black solid 2px;
+    border: rgba(121, 121, 121, 0.685) solid 2px;
 
 }
 
@@ -109,6 +110,6 @@ select > option {
 
     background-color: rgb(206, 206, 11);
 
-    color: black !important;
+    color: rgba(121, 121, 121, 0.685) !important;
 
 }
