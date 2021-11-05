@@ -52,6 +52,7 @@ footer {
 
 .eateries-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-self: flex-end;
 border: solid black 2px;
@@ -77,3 +78,4 @@ img {
   }
  
  
+
