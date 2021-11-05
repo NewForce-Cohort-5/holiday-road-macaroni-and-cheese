@@ -4,7 +4,8 @@ export const Attractions = (attractions) => {
             <div class="attractions_name">
                 ${attractions.name}
             </div>
-
+            <button id="attractions-details" type="button">Details</button>
+            <article id="attractionsinfo" style="display: none;">
              <div class="attractions_state">
                  ${attractions.state}
              </div>

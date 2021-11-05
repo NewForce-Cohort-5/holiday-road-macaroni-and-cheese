@@ -48,7 +48,7 @@ document.querySelector("#parks-details").addEventListener("click", ()=> {
     
 )
 
-document.querySelector("#attractions-details").addEventListener("click", ()=> {
+document.querySelector(".attractions-container").addEventListener("click", ()=> {
     var x = document.getElementById("attractioninfo");
     if (x.style.display === "none") {
       x.style.display = "block";

@@ -5,7 +5,7 @@ export const useWeather = () =>{
 }
 
 export const getWeather = (zipCode, weatherKey) =>{
-    return fetch(`https://api.openweathermap.org/data/2.5/forecast?zip=${zipCode},us&appid=${weatherKey}
+    return fetch(`https://api.openweathermap.org/data/2.5/forecast?&units=imperial&zip=${zipCode},us&appid=${weatherKey}
     `)
     .then(res => res.json())
     .then(parsedWeather => {
