@@ -24,6 +24,7 @@ export const Attractions = (attractions) => {
             `
 }
 
+
 document.querySelector(".attractions-container").addEventListener("click", (event) => {
 
     if(event.target.id === "attractions-details")

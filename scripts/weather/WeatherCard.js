@@ -12,7 +12,7 @@ export const Weather = (weather) => {
             <li> High Temperature: ${weather[i].main.temp_max} <span>&#8457;</span>  </li>
             <li> Humidity: ${weather[i].main.humidity}</li>
         </ul>
-    <div class="weather_type">${null}}</div>
+    
     </section>
     `
 
