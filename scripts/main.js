@@ -48,6 +48,7 @@ document.querySelector("#parks-details").addEventListener("click", ()=> {
     
 )
 
+<<<<<<< HEAD
 document.querySelector(".attractions-container").addEventListener("click", ()=> {
     var x = document.getElementById("attractioninfo");
     if (x.style.display === "none") {
@@ -56,8 +57,18 @@ document.querySelector(".attractions-container").addEventListener("click", ()=> 
       x.style.display = "none";
     }
   }
+=======
+// document.querySelector("#attractions-details").addEventListener("click", ()=> {
+//     var x = document.getElementById("attractioninfo");
+//     if (x.style.display === "none") {
+//       x.style.display = "block";
+//     } else {
+//       x.style.display = "none";
+//     }
+//   }
+>>>>>>> main
     
-)
+// )
 
 document.querySelector("#eateries-details").addEventListener("click", ()=> {
     var x = document.getElementById("eatinfo");
