@@ -4,15 +4,10 @@ export const Attractions = (attractions) => {
             <div class="attractions_name">
                 ${attractions.name}
             </div>
-<<<<<<< HEAD
-            <button id="attractions-details" type="button">Details</button>
-            <article id="attractionsinfo" style="display: none;">
-=======
 
             <button id="attractions-details" type="button">Details</button>
 
             <article id="attractioninfo" style="display: none;">
->>>>>>> main
              <div class="attractions_state">
                  ${attractions.state}
              </div>
