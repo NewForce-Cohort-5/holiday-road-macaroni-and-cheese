@@ -15,7 +15,7 @@ ParkSelect()
 EaterySelect()
 AttractionSelect()
 
-// <<<<<<< HEAD
+// 
 
 // document.querySelector("#parks-details").addEventListener("click", ()=> {
 //     var x = document.getElementById("parkinfo");

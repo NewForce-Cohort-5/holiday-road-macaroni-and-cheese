@@ -13,7 +13,7 @@ export const ParksList = (stringFromDropdown) => {
 const parkObject= parksArray.find(singleObject => {
     return stringFromDropdown === singleObject.fullName
 }) 
-console.log(parkObject)
+//console.log(parkObject)
 
 //new part
 parksHTML = Parks(parkObject)
