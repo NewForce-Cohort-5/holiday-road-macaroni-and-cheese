@@ -1,5 +1,5 @@
 body {
-    
+    font-family: OCR A Std, monospace;
     background-color: rgb(206, 206, 11);
 }
 
@@ -8,18 +8,35 @@ body {
     display: flex;
     justify-content: space-around;
     border: black solid 2px;
-    padding: 2px;
+    padding: 5px;
+    margin: 2em;
 }
 
 .overview {
     display: flex;
-    border: black solid 2px;
-    flex-direction: column;
-    justify-content: center;
-    width: 74%;
+    flex-direction: row;
+    justify-content:  space-evenly;
+    width: 90vw;
+    margin: 2em;
+
     
 }
 
+.right {
+    /* border: 1px dashed blue; */
+    height: 80vh;
+    width: 40vw;
+
+}
+.left{
+    /* border: 1px dashed red; */
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 40vw;
+
+
+}
 .parks-container{
     display: flex;
     justify-content:flex-start;
@@ -48,18 +65,20 @@ footer {
     display: flex;
     justify-content: center;
     padding-top: 2em;
+    margin: 5em;
 }
 
 .eateries-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: flex-end;
-border: solid black 2px;
-position: absolute;
-right: 0;
-width: 25%;
-height:34%;
+    /* display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+   /* border: solid black 2px; */
+/* position: absolute; */
+/* right: 0; */
+/* width: 25%; */
+/* height:34%; */
+/* margin: 2em;  */
+
 
 
 }
@@ -77,5 +96,19 @@ img {
       margin-left: 5em;
   }
  
- 
+  .attractions-container {
+    border: black solid 2px;
 
+  }
+.eateries-container{
+    border: black solid 2px;
+
+}
+
+select > option {
+
+    background-color: rgb(206, 206, 11);
+
+    color: black !important;
+
+}
