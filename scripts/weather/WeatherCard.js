@@ -20,4 +20,3 @@ export const Weather = (weather) => {
 console.log(eachWeatherHTML)
 return eachWeatherHTML
 }
-63f70ebcb068c5caa095bfcbc9bbab30d840d15c
