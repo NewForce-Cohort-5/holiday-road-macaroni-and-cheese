@@ -1,16 +1,17 @@
 import { Eateries } from "./EateryCard.js";
-import { getEateries, useEateris } from "./EateryDataProvider.js";
+import { getEateries, useEateries } from "./EateryDataProvider.js";
 
-export const EatrisList = (stringFromDropdown) => {
+export const EateriesList = (stringFromDropdown) => {
     getEateries()
     .then (() => {
-        let eateriesArray = useEateris ()
+        let eateriesArray = useEateries ()
 
         let eateriesHTML = "";
 
         const eateryObject =eateriesArray.find(singleObject => {
             return stringFromDropdown === singleObject.businessName
         })
+//onsole.log(eateryObject)
 
       eateriesHTML = Eateries(eateryObject)
       
