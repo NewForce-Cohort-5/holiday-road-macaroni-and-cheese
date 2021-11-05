@@ -1,0 +1,114 @@
+body {
+    font-family: OCR A Std, monospace;
+    background-color: rgb(206, 206, 11);
+}
+
+
+#top-bar {
+    display: flex;
+    justify-content: space-around;
+    border: black solid 2px;
+    padding: 5px;
+    margin: 2em;
+}
+
+.overview {
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-evenly;
+    width: 90vw;
+    margin: 2em;
+
+    
+}
+
+.right {
+    /* border: 1px dashed blue; */
+    height: 80vh;
+    width: 40vw;
+
+}
+.left{
+    /* border: 1px dashed red; */
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 40vw;
+
+
+}
+.parks-container{
+    display: flex;
+    justify-content:flex-start;
+
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+#parks-details {
+    display: flex;
+    justify-content: flex-end;
+}
+.weather-container{
+border: solid black 2px;
+}
+.parkcard{
+    
+   border: black solid 2px;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    margin: 5em;
+}
+
+.eateries-container{
+    /* display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+   /* border: solid black 2px; */
+/* position: absolute; */
+/* right: 0; */
+/* width: 25%; */
+/* height:34%; */
+/* margin: 2em;  */
+
+
+
+}
+.park_name{
+    text-align: start;
+    display: flex;
+
+}
+img {
+    width: 10%;
+    height: auto;
+  }
+
+  #parks-details {
+      margin-left: 5em;
+  }
+ 
+  .attractions-container {
+    border: black solid 2px;
+
+  }
+.eateries-container{
+    border: black solid 2px;
+
+}
+
+select > option {
+
+    background-color: rgb(206, 206, 11);
+
+    color: black !important;
+
+}
