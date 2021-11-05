@@ -3,7 +3,7 @@ import {getParks, useParks} from "./ParkDataProvider.js"
 import { settings } from "../Settings.js"
 
 let key = settings.npsKey 
- console.log(key)
+ //console.log(key)
 
 export const ParkSelect = () => {
     getParks().then(() => {

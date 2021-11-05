@@ -1,4 +1,5 @@
 import { getEateries, useEateries } from "./EateryDataProvider.js";
+import {EateriesList} from "./EateryList.js"
 
 export const EaterySelect = () => {
     getEateries()
@@ -25,9 +26,6 @@ const render = eateriesCollection => {
 
 document.querySelector("body").addEventListener("change", (eventObject) => {
     if(eventObject.target.id ==="nateateries-dropdown"){
-        document.querySelector(".eateries-container").innerHTML = `
-        <div class="eateries-styled-container">${eventObject.target.value}</div>
-        <button id="eateries-details__${eventObject.target.id}">Details</button>
-        `
+        EateriesList(eventObject.target.value)
     }
 }) 
